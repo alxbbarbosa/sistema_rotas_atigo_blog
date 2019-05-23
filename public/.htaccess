@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /para_blog/rotas/public
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d	
+RewriteRule ^([A-Za-z0-9\\\/\-]+)$ index.php?uri=$1 [QSA,L]

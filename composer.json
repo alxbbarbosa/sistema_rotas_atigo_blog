@@ -1,0 +1,22 @@
+{
+    "name": "abbarbosa/artigo_rotas",
+    "description": "Artigo sobre a criação de sistema de rotas para mvc",
+    "authors": [
+        {
+            "name": "Alexandre Bezerra Barbosa",
+            "email": "alxbbarbosa@yahoo.com.br"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+    	"psr-4": {
+    		"App\\" : "app/",
+    		"Src\\" : "src/"
+    	},
+        "files": [
+            "src/helpers/helper_routes.php"
+        ]
+        
+    }
+    
+}
